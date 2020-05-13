@@ -1,0 +1,119 @@
+:root {
+  --bg-color: #CCFFCC;
+  --nav-color: #66CCFF;
+  --odbar-color: #003399;
+  --evbar-color: #0099CC;
+  --bar-width: 20%;
+  --bartext-align: center;
+  --bartext-color: white;
+  --bartext-size: 30px;
+  --border-type: solid;
+  --border-color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr;
+  background-color: var(--bg-color);
+}
+
+.nav {
+  grid-column: 1 /span 7;
+  grid-row: 1;
+  text-align: center;
+  background-color: var(--nav-color);
+}
+
+.nav__title{
+  color: red;
+}
+
+.chart {
+  grid-column: 2 /span 5;
+  grid-row: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  height: 300px;
+}
+
+.chart__block {
+  border: var(--border-type);
+  border-color: var(--border-color);
+  color: var(--bartext-color);
+  font-size: var(--bartext-size);
+  text-align: var(--bartext-align);
+  width: var(--bar-width);
+
+  transition: .5s;
+}
+
+.chart__block:hover {
+  background-color: red;
+}
+
+.chart__block--odd {
+  background-color: var(--odbar-color);
+}
+
+.chart__block--even {
+  background-color: var(--evbar-color);
+}
+
+/* .usd {
+  border: var(--border-type);
+  border-color: var(--border-color);
+  color: var(--bartext-color);
+  font-size: var(--bartext-size);
+  text-align: var(--bartext-align);
+  width: var(--bar-width);
+  background-color: var(--odbar-color);
+
+  transition: .5s;
+}
+
+.usd:hover {
+  background-color: red;
+}
+
+.php {
+  border: var(--border-type);
+  border-color: var(--border-color);
+  color: var(--bartext-color);
+  font-size: var(--bartext-size);
+  text-align: var(--bartext-align);
+  width: var(--bar-width);
+  background-color: var(--evbar-color);
+}
+
+.hkd {
+  border: var(--border-type);
+  border-color: var(--border-color);
+  color: var(--bartext-color);
+  font-size: var(--bartext-size);
+  text-align: var(--bartext-align);
+  width: var(--bar-width);
+  background-color: var(--odbar-color);
+}
+
+.jpy {
+  border: var(--border-type);
+  border-color: var(--border-color);
+  color: var(--bartext-color);
+  font-size: var(--bartext-size);
+  text-align: var(--bartext-align);
+  width: var(--bar-width);
+  background-color: var(--evbar-color);
+}
+
+.cny {
+  border: var(--border-type);
+  border-color: var(--border-color);
+  color: var(--bartext-color);
+  font-size: var(--bartext-size);
+  text-align: var(--bartext-align);
+  width: var(--bar-width);
+  background-color: var(--odbar-color);
+} */
